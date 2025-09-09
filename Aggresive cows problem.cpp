@@ -6,7 +6,7 @@ using namespace std;
 bool ispossible(vector<int> &arr, int n, int c, int min_allowed){
     int cows= 1, laststallpos = arr[0];
 
-    for(int i=0; i<n; i++){
+    for(int i=1; i<n; i++){
         if(arr[i]-laststallpos >= min_allowed){
             cows++;
             laststallpos = arr[i];
